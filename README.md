@@ -1,2 +1,23 @@
-# asp-net-core-6-http-client
-Culled from a Pluralsight class Entitled "Accessing APIs Using HttpClient in .NET 6."
+## Accessing APIs Using HttpClient in .NET 6
+
+- UNDERSTANDING INTEGRATION WITH AN API USING HTTPCLIENT:
+  - .NET 6. C# Version 10.
+  - [Demo application](https://github.com/KevinDockx/AccessingAPIsWithHttpClientDotNet6)
+    - Fully functioning sample and starter files for my Accessing APIs with HttpClient in .NET 6 course.
+    - [localhost](http://localhost:5001/swagger/index.html)
+  - Strategies for working with DTOs:
+    - SHARED MODEL PROJECT:
+      - Diminishes code duplication. Changes are only applied in one place.
+      - Useful when you want to deploy the model assembly idependently.
+      - Requires control over API and associated client(s.)
+      - BOTH must target supported platforms.
+    - LINKED FILES:
+      - Diminishes code duplication. Changes are only applied in one place.
+      - Requires control over API and associated client(s.)
+      - BOTH must target supported platforms.
+    - What if you don't have control over the API?
+      - Another technology? Another team?
+    - Generating DTOs:
+      - Modern-day generation relies on a machine-readable description of the API.
+      - e.g.: OpenAPI. (Swagger.)
+      - Swagger CodeGen. Java-based. Online version. NSwagStudio. (Windows application.)
